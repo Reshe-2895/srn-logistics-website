@@ -1,0 +1,1079 @@
+
+/* =====================================================
+   SRN LOGISTICS
+   PRODUCTS & EXPERTISE PAGE
+===================================================== */
+
+
+/* =====================================================
+   01. PAGE FOUNDATION
+===================================================== */
+
+.products-page {
+    background: #080a0c;
+    color: #f7f5f0;
+    overflow-x: hidden;
+}
+
+.products-page main {
+    width: 100%;
+}
+
+.products-container {
+    width: min(1280px, 88%);
+    margin: 0 auto;
+}
+
+.products-eyebrow {
+    color: #d7b45f;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   02. CINEMATIC HERO
+===================================================== */
+
+.products-hero {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 680px;
+    height: min(760px, calc(100svh - 94px));
+    overflow: hidden;
+    background: #080a0c;
+}
+
+.products-hero-background {
+    position: absolute;
+    z-index: -3;
+    inset: 0;
+
+    background-image:
+        url("../assets/images/product/productgold.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: scale(1.025);
+    animation: productsHeroZoom 18s ease-in-out infinite alternate;
+}
+
+.products-hero-overlay {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 6, 9, 0.97) 0%,
+            rgba(4, 6, 9, 0.88) 34%,
+            rgba(4, 6, 9, 0.48) 65%,
+            rgba(4, 6, 9, 0.18) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(4, 6, 9, 0.65) 0%,
+            transparent 45%
+        );
+}
+
+.products-hero-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: min(1280px, 88%);
+    min-height: inherit;
+    height: 100%;
+    margin: 0 auto;
+
+    padding: 70px 0 100px;
+}
+
+.products-hero-content {
+    max-width: 750px;
+}
+
+.products-hero-content .products-eyebrow {
+    margin-bottom: 25px;
+}
+
+.products-hero-title {
+    max-width: 760px;
+
+    color: #f7f5f0;
+    font-family: var(--font-heading);
+    font-size: clamp(48px, 5.6vw, 82px);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.products-hero-title span {
+    display: block;
+    color: #edcf86;
+}
+
+.products-hero-description {
+    max-width: 570px;
+    margin-top: 26px;
+
+    color: #d0d0d0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.products-hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    min-height: 57px;
+    margin-top: 34px;
+    padding: 0 25px;
+
+    border: 1px solid #d7b45f;
+    background: #d7b45f;
+    color: #15120b;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.products-hero-button span {
+    font-size: 20px;
+}
+
+.products-hero-button:hover {
+    border-color: #edcf86;
+    background: #edcf86;
+    transform: translateY(-3px);
+}
+
+.products-hero-index {
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    color: #e7e7e7;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.products-hero-index > span:first-child {
+    color: #edcf86;
+    font-size: 16px;
+}
+
+.products-hero-index-line {
+    width: 45px;
+    height: 1px;
+    background: #d7b45f;
+}
+
+@keyframes productsHeroZoom {
+    from {
+        transform: scale(1.025);
+    }
+
+    to {
+        transform: scale(1.09);
+    }
+}
+
+
+/* =====================================================
+   03. PRODUCT PORTFOLIO
+===================================================== */
+
+.product-portfolio {
+    padding: 115px 0 125px;
+    background: #f7f5f0;
+    color: #151719;
+}
+
+.product-portfolio-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+
+    margin-bottom: 55px;
+}
+
+.product-portfolio-heading > div {
+    max-width: 720px;
+}
+
+.product-portfolio-heading .products-eyebrow {
+    margin-bottom: 19px;
+}
+
+.product-portfolio-heading h2 {
+    color: #151719;
+    font-family: var(--font-heading);
+    font-size: clamp(36px, 4.2vw, 57px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.product-portfolio-heading h2 span {
+    display: block;
+    color: #a98943;
+}
+
+.product-portfolio-heading > p {
+    max-width: 365px;
+    padding-bottom: 5px;
+
+    color: #686868;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* CATEGORY GRID */
+
+.product-category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.product-category-card {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    align-items: flex-end;
+
+    min-height: 390px;
+    overflow: hidden;
+
+    background: #111315;
+    color: #fff;
+}
+
+.product-category-image {
+    position: absolute;
+    z-index: -3;
+    inset: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.image-metals {
+    background-image:
+        url("../assets/images/product/product1.png");
+}
+
+.image-jewellery {
+    background-image:
+        url("../assets/images/product/product2.png");
+}
+
+.image-gemstones {
+    background-image:
+        url("../assets/images/product/product3.png");
+}
+
+.image-merchandise {
+    background-image:
+        url("../assets/images/product/product4.png");
+}
+
+.product-category-overlay {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(4, 6, 9, 0.96) 0%,
+            rgba(4, 6, 9, 0.62) 36%,
+            rgba(4, 6, 9, 0.04) 100%
+        );
+
+    transition: background 0.4s ease;
+}
+
+.product-category-card:hover .product-category-image {
+    transform: scale(1.08);
+}
+
+.product-category-card:hover .product-category-overlay {
+    background:
+        linear-gradient(
+            0deg,
+            rgba(4, 6, 9, 0.98) 0%,
+            rgba(4, 6, 9, 0.72) 48%,
+            rgba(4, 6, 9, 0.12) 100%
+        );
+}
+
+.product-category-content {
+    width: 100%;
+    padding: 35px;
+}
+
+.product-category-number {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #edcf86;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.product-category-content h3 {
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: clamp(27px, 3vw, 37px);
+    font-weight: 400;
+}
+
+.product-category-content > p {
+    margin-top: 9px;
+
+    color: #d0d0d0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.product-category-link {
+    display: inline-block;
+    margin-top: 23px;
+
+    color: #edcf86;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+
+    transition: transform 0.3s ease;
+}
+
+.product-category-card:hover .product-category-link {
+    transform: translateX(5px);
+}
+
+
+/* =====================================================
+   04. DETAILED PRODUCT SECTIONS
+===================================================== */
+
+.product-detail {
+    padding: 110px 0;
+}
+
+.product-detail-dark {
+    background: #111315;
+    color: #f7f5f0;
+}
+
+.product-detail-light {
+    background: #f1eee7;
+    color: #151719;
+}
+
+.product-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 0.88fr;
+    align-items: center;
+    gap: 95px;
+
+    width: min(1250px, 88%);
+    margin: 0 auto;
+}
+
+.product-detail-image {
+    position: relative;
+    min-width: 0;
+    height: 500px;
+    overflow: hidden;
+    background: #252525;
+}
+
+.product-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.8s ease;
+}
+
+.product-detail-image:hover img {
+    transform: scale(1.045);
+}
+
+.product-image-number {
+    position: absolute;
+    right: 25px;
+    bottom: 22px;
+
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--font-heading);
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.product-detail-content {
+    max-width: 520px;
+}
+
+.product-detail-content .products-eyebrow {
+    margin-bottom: 23px;
+}
+
+.product-detail-content h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(43px, 4.4vw, 62px);
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+.product-detail-dark .product-detail-content h2 {
+    color: #f7f5f0;
+}
+
+.product-detail-light .product-detail-content h2 {
+    color: #151719;
+}
+
+.product-detail-content h2 span {
+    display: block;
+    color: #c5a052;
+}
+
+.product-detail-intro {
+    margin-top: 23px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.product-detail-description {
+    margin-top: 16px;
+
+    font-size: 13px;
+    line-height: 2;
+}
+
+.product-detail-dark .product-detail-intro {
+    color: #e0e0e0;
+}
+
+.product-detail-dark .product-detail-description {
+    color: #bdbdbd;
+}
+
+.product-detail-light .product-detail-intro {
+    color: #383838;
+}
+
+.product-detail-light .product-detail-description {
+    color: #686868;
+}
+
+
+/* PRODUCT TAGS */
+
+.product-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 27px;
+}
+
+.product-detail-tags span {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 34px;
+    padding: 0 13px;
+
+    border: 1px solid rgba(197, 160, 82, 0.5);
+
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.product-detail-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+
+    min-height: 54px;
+    margin-top: 33px;
+    padding: 0 22px;
+
+    border: 1px solid #c5a052;
+    background: #c5a052;
+    color: #111315;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.product-detail-button span {
+    font-size: 19px;
+}
+
+.product-detail-button:hover {
+    background: transparent;
+    color: #c5a052;
+    transform: translateY(-2px);
+}
+
+.product-detail-light .product-detail-button:hover {
+    color: #8d6c2f;
+}
+
+
+/* =====================================================
+   05. TRADE EXPERTISE
+===================================================== */
+
+.trade-expertise {
+    position: relative;
+    padding: 120px 0 125px;
+    background: #080a0c;
+    color: #f7f5f0;
+}
+
+.trade-expertise-container {
+    width: min(1280px, 88%);
+    margin: 0 auto;
+}
+
+.trade-expertise-heading {
+    max-width: 780px;
+    margin-bottom: 65px;
+}
+
+.trade-expertise-heading .products-eyebrow {
+    margin-bottom: 20px;
+}
+
+.trade-expertise-heading h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(38px, 4.5vw, 60px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.trade-expertise-heading h2 span {
+    display: block;
+    color: #d7b45f;
+}
+
+.trade-expertise-heading > p:last-child {
+    max-width: 650px;
+    margin-top: 22px;
+
+    color: #bcbcbc;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* EXPERTISE GRID */
+
+.trade-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    border-top: 1px solid rgba(215, 180, 95, 0.4);
+    border-bottom: 1px solid rgba(215, 180, 95, 0.4);
+}
+
+.trade-expertise-item {
+    min-height: 245px;
+    padding: 32px 25px;
+}
+
+.trade-expertise-item + .trade-expertise-item {
+    border-left: 1px solid rgba(215, 180, 95, 0.25);
+}
+
+.trade-expertise-item > span {
+    display: block;
+    margin-bottom: 28px;
+
+    color: #d7b45f;
+    font-family: var(--font-heading);
+    font-size: 27px;
+}
+
+.trade-expertise-item h3 {
+    color: #f7f5f0;
+    font-family: var(--font-heading);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.trade-expertise-item p {
+    margin-top: 14px;
+
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   06. FINAL ENQUIRY SECTION
+===================================================== */
+
+.products-enquiry {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 480px;
+    padding: 90px 6%;
+
+    overflow: hidden;
+
+    background-image:
+        url("../assets/images/04-global-cargo.jpg");
+
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.products-enquiry-overlay {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 7, 9, 0.94),
+            rgba(5, 7, 9, 0.77),
+            rgba(5, 7, 9, 0.94)
+        );
+}
+
+.products-enquiry-container {
+    max-width: 780px;
+}
+
+.products-enquiry-container .products-eyebrow {
+    margin-bottom: 20px;
+}
+
+.products-enquiry-container h2 {
+    color: #f7f5f0;
+    font-family: var(--font-heading);
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.products-enquiry-container h2 span {
+    display: block;
+    color: #edcf86;
+}
+
+.products-enquiry-container > p:not(.products-eyebrow) {
+    max-width: 600px;
+    margin: 23px auto 0;
+
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.products-enquiry-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    min-height: 57px;
+    margin-top: 33px;
+    padding: 0 25px;
+
+    border: 1px solid #d7b45f;
+    background: #d7b45f;
+    color: #111315;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.products-enquiry-button span {
+    font-size: 20px;
+}
+
+.products-enquiry-button:hover {
+    background: #edcf86;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   07. RESPONSIVE DESIGN — TABLET
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .products-hero {
+        min-height: 620px;
+    }
+
+    .product-detail-container {
+        gap: 55px;
+    }
+
+    .product-detail-image {
+        height: 430px;
+    }
+
+    .trade-expertise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trade-expertise-item:nth-child(3) {
+        border-left: 0;
+        border-top: 1px solid rgba(215, 180, 95, 0.25);
+    }
+
+    .trade-expertise-item:nth-child(4) {
+        border-top: 1px solid rgba(215, 180, 95, 0.25);
+    }
+
+}
+
+
+/* =====================================================
+   08. RESPONSIVE DESIGN — MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .products-container,
+    .products-hero-container,
+    .product-detail-container,
+    .trade-expertise-container {
+        width: 90%;
+    }
+
+
+    /* HERO */
+
+    .products-hero {
+        height: auto;
+        min-height: 680px;
+        max-height: none;
+    }
+
+    .products-hero-container {
+        min-height: 680px;
+        padding: 90px 0 100px;
+    }
+
+    .products-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(4, 6, 9, 0.94),
+                rgba(4, 6, 9, 0.72)
+            ),
+            linear-gradient(
+                0deg,
+                rgba(4, 6, 9, 0.65),
+                transparent
+            );
+    }
+
+    .products-hero-title {
+        font-size: clamp(43px, 9vw, 62px);
+        letter-spacing: -1px;
+    }
+
+    .products-hero-description {
+        max-width: 480px;
+        font-size: 13px;
+    }
+
+    .products-hero-index {
+        bottom: 30px;
+    }
+
+
+    /* PORTFOLIO */
+
+    .product-portfolio {
+        padding: 80px 0;
+    }
+
+    .product-portfolio-heading {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .product-portfolio-heading h2 {
+        font-size: 39px;
+    }
+
+    .product-portfolio-heading > p {
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .product-category-grid {
+        gap: 15px;
+    }
+
+    .product-category-card {
+        min-height: 320px;
+    }
+
+    .product-category-content {
+        padding: 22px;
+    }
+
+    .product-category-content h3 {
+        font-size: 25px;
+    }
+
+
+    /* PRODUCT DETAILS */
+
+    .product-detail {
+        padding: 75px 0;
+    }
+
+    .product-detail-container {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .product-detail-image {
+        height: 430px;
+    }
+
+    .product-detail-content {
+        max-width: none;
+    }
+
+    .product-detail-content h2 {
+        font-size: 47px;
+    }
+
+    /* Keep text and image in the intended order on mobile */
+    .product-detail-light .product-detail-content {
+        order: 1;
+    }
+
+    .product-detail-light .product-detail-image {
+        order: 2;
+    }
+
+
+    /* EXPERTISE */
+
+    .trade-expertise {
+        padding: 85px 0;
+    }
+
+    .trade-expertise-heading {
+        margin-bottom: 40px;
+    }
+
+    .trade-expertise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trade-expertise-item {
+        min-height: 220px;
+        padding: 25px 18px;
+    }
+
+
+    /* ENQUIRY */
+
+    .products-enquiry {
+        min-height: 440px;
+        padding: 75px 6%;
+    }
+
+}
+
+
+/* =====================================================
+   09. RESPONSIVE DESIGN — SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .products-hero {
+        min-height: 620px;
+    }
+
+    .products-hero-container {
+        min-height: 620px;
+    }
+
+    .products-hero-title {
+        font-size: 43px;
+    }
+
+    .products-hero-content .products-eyebrow {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .products-hero-button {
+        min-height: 52px;
+        padding: 0 17px;
+        font-size: 11px;
+    }
+
+
+    /* SINGLE COLUMN PRODUCT CARDS */
+
+    .product-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-category-card {
+        min-height: 340px;
+    }
+
+    .product-category-content h3 {
+        font-size: 30px;
+    }
+
+
+    /* PRODUCT DETAIL */
+
+    .product-detail-image {
+        height: 340px;
+    }
+
+    .product-detail-content h2 {
+        font-size: 43px;
+    }
+
+    .product-detail-intro {
+        font-size: 14px;
+    }
+
+    .product-detail-description {
+        font-size: 12px;
+    }
+
+    .product-detail-button {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 15px;
+        font-size: 10px;
+    }
+
+
+    /* EXPERTISE */
+
+    .trade-expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trade-expertise-item {
+        min-height: auto;
+        padding: 27px 10px;
+    }
+
+    .trade-expertise-item + .trade-expertise-item {
+        border-top: 1px solid rgba(215, 180, 95, 0.25);
+        border-left: 0;
+    }
+
+    .trade-expertise-item > span {
+        margin-bottom: 15px;
+    }
+
+
+    /* ENQUIRY */
+
+    .products-enquiry-container h2 {
+        font-size: 43px;
+    }
+
+    .products-enquiry-button {
+        width: 100%;
+        gap: 12px;
+        padding: 0 15px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* =====================================================
+   10. ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .products-hero-background {
+        animation: none;
+        transform: none;
+    }
+
+    .products-page *,
+    .products-page *::before,
+    .products-page *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}

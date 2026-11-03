@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global Trade | SRN Logistics</title>
+
+    <meta
+        name="description"
+        content="Discover SRN Logistics' international business markets, import-export capabilities and global trade relationships."
+    >
+
+    <meta name="theme-color" content="#080a0c">
+
+    <!-- Shared and page-specific styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <script src="script.js" defer></script>
+</head>
+
+<body class="global-trade-page">
+
+    <!-- =====================================
+         HEADER AND NAVIGATION
+    ====================================== -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a class="brand" href="index.html" aria-label="SRN Logistics home">
+
+                <span class="logo-placeholder"></span>
+
+                <span class="brand-text">
+                    <span class="brand-name">SRN</span>
+                    <span class="brand-description">LOGISTICS</span>
+                    <span class="brand-tagline">IMPORT &amp; EXPORT</span>
+                </span>
+
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation">
+
+                <a class="nav-link" href="index.html">Home</a>
+
+                <a class="nav-link" href="about.html">
+                    About SRN
+                </a>
+
+                <a class="nav-link" href="legacy.html">
+                    Our Legacy &amp; Leadership
+                </a>
+
+                <a class="nav-link" href="products.html">
+                    Products &amp; Expertise
+                </a>
+
+                <a
+                    class="nav-link active"
+                    href="global.html"
+                    aria-current="page"
+                >
+                    Global Trade
+                </a>
+
+                <a class="nav-link" href="contact.html">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <a class="header-cta" href="contact.html">
+                Enquire Now
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================
+             01. GLOBAL TRADE HERO
+        ====================================== -->
+
+        <section class="global-hero">
+
+            <div class="global-hero-background"></div>
+
+            <div class="global-hero-overlay"></div>
+
+            <div class="global-hero-container">
+
+                <div class="global-hero-content">
+
+                    <p class="global-eyebrow">
+
+                        <span>·</span>
+
+                    </p>
+
+                    <h1>
+
+                        <span></span>
+                    </h1>
+
+                    <p class="global-hero-description">
+                        From established business relationships
+                        across international markets to the
+                        coordination of import and export
+                        requirements, SRN brings experience
+                        and commitment to global trade.
+                    </p>
+
+                    <a
+                        href="#global-presence"
+                        class="global-hero-button"
+                    >
+                        Explore Our Global Markets
+                        <span aria-hidden="true">↓</span>
+                    </a>
+
+                </div>
+
+                <div class="global-hero-index">
+                    <span>01</span>
+                    <span class="global-index-line"></span>
+                    <span>GLOBAL CONNECTIONS</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             02. GLOBAL INTRODUCTION
+        ====================================== -->
+
+        <section class="global-introduction">
+
+            <div class="global-container">
+
+                <div class="global-introduction-top">
+
+                    <p class="global-eyebrow">
+                        GLOBAL TRADE
+                    </p>
+
+                    <h2>
+                        Our Business.
+                        <span>Across Borders.</span>
+                    </h2>
+
+                </div>
+
+                <div class="global-introduction-content">
+
+                    <p class="global-introduction-lead">
+                        From precious metals and fine jewellery to gemstones and general cargo,
+                        our business connects products with opportunities across international markets.
+                    </p>
+
+                    <p>
+                       SRN Logistics is engaged in the international trade of gold, silver and platinum bars and jewellery,
+                       along with precious stones including rubies, emeralds, sapphires and diamonds.
+                    </p>
+
+                    <p>
+                        With a worldwide business outlook and a primary focus on Gulf countries,
+                        we build business relationships across markets through experience in international trade,
+                        air cargo operations and customs procedures.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             03. GLOBAL PRESENCE / WORLD MAP
+        ====================================== -->
+
+        <section
+            class="global-presence"
+            id="global-presence"
+        >
+
+            <div class="global-container">
+
+                <div class="global-presence-heading">
+
+                    <p class="global-eyebrow">
+                        OUR INTERNATIONAL MARKETS
+                    </p>
+
+                    <h2>
+                        A World of
+                        <span>Business Connections.</span>
+                    </h2>
+
+                    <p>
+                        Our business relationships extend
+                        across international markets,
+                        connecting opportunities across
+                        continents.
+                    </p>
+
+                </div>
+
+
+                <!-- REAL INTERACTIVE WORLD MAP -->
+                <div class="global-map-panel">
+                    <div class="global-map-heading">
+                        <div>
+                            <span class="map-live-dot"></span>
+                            <span>SRN BUSINESS MARKETS</span>
+                        </div>
+                        <span>INTERNATIONAL REACH</span>
+                    </div>
+
+                    <div class="global-map-visual">
+                        <div id="srnWorldMap" class="srn-world-map"
+                             role="application"
+                             aria-label="Interactive geographic world map showing SRN Logistics markets and Chennai origin"></div>
+                        <div class="map-caption">
+                            <span class="map-caption-dot"></span>
+                            ACTIVE BUSINESS MARKETS
+                        </div>
+                    </div>
+
+                    <div class="global-map-legend">
+                        <span><i class="legend-origin"></i> Chennai · SRN origin</span>
+                        <span><i class="legend-market"></i> Business markets</span>
+                        <span><i class="legend-route"></i> Illustrative connections</span>
+                    </div>
+                </div>
+
+
+                <!-- MARKET INFORMATION -->
+
+                <div class="market-list-heading">
+
+                    <p class="global-eyebrow">
+                        OUR BUSINESS REACH
+                    </p>
+
+                    <h3>
+                        Markets We Work With.
+                    </h3>
+
+                </div>
+
+
+                <div class="global-market-grid">
+
+
+                    <!-- NORTH AMERICA -->
+
+                    <article
+                        class="global-market-card"
+                        id="market-north-america"
+                    >
+
+                        <span class="market-number">01</span>
+
+                        <div>
+                            <p class="market-region">
+                                NORTH AMERICA
+                            </p>
+
+                            <h3>North America</h3>
+
+                            <p class="market-countries">
+                                United States · Canada
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- EUROPE -->
+
+                    <article
+                        class="global-market-card"
+                        id="market-europe"
+                    >
+
+                        <span class="market-number">02</span>
+
+                        <div>
+                            <p class="market-region">
+                                EUROPE
+                            </p>
+
+                            <h3>European Markets</h3>
+
+                            <p class="market-countries">
+                                United Kingdom · European countries
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- MIDDLE EAST -->
+
+                    <article
+                        class="global-market-card"
+                        id="market-middle-east"
+                    >
+
+                        <span class="market-number">03</span>
+
+                        <div>
+                            <p class="market-region">
+                                Gulf countries
+                            </p>
+
+                            <h3>Middle East</h3>
+
+                            <p class="market-countries">
+                                Saudi Arabia
+• United Arab Emirates (UAE)
+• Qatar
+• Kuwait
+• Bahrain
+• Oman
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- SOUTHEAST ASIA -->
+
+                    <article
+                        class="global-market-card"
+                        id="market-asia"
+                    >
+
+                        <span class="market-number">04</span>
+
+                        <div>
+                            <p class="market-region">
+                                ASIA
+                            </p>
+
+                            <h3>Asian Markets</h3>
+
+                            <p class="market-countries">
+                                Malaysia · Singapore · Hong Kong
+                                · Bangkok · Philippines · Jakarta
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- AUSTRALIA -->
+
+                    <article
+                        class="global-market-card"
+                        id="market-australia"
+                    >
+
+                        <span class="market-number">05</span>
+
+                        <div>
+                            <p class="market-region">
+                                OCEANIA
+                            </p>
+
+                            <h3>Australia</h3>
+
+                            <p class="market-countries">
+                                Australia
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- AFRICA -->
+
+                    <article
+                        class="global-market-card"
+                        id="market-africa"
+                    >
+
+                        <span class="market-number">06</span>
+
+                        <div>
+                            <p class="market-region">
+                                AFRICA
+                            </p>
+
+                            <h3>African Markets</h3>
+
+                            <p class="market-countries">
+                                African countries
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             04. TRADE CAPABILITIES
+        ====================================== -->
+
+        <section class="global-capabilities">
+
+            <div class="global-container">
+
+                <div class="global-capabilities-heading">
+
+                    <p class="global-eyebrow">
+                        OUR TRADE CAPABILITIES
+                    </p>
+
+                    <h2>
+                        Experience Behind
+                        <span>Every Connection.</span>
+                    </h2>
+
+                    <p>
+                        Our international business activities
+                        are supported by practical industry
+                        experience and an understanding of
+                        trade processes.
+                    </p>
+
+                </div>
+
+
+                <div class="global-capabilities-grid">
+
+                    <article class="global-capability-card">
+
+                        <span class="capability-number">01</span>
+
+                        <div class="capability-icon">✦</div>
+
+                        <h3>Air Cargo Operations</h3>
+
+                        <p>
+                            Experience in air cargo operations
+                            and the movement of goods across
+                            international markets.
+                        </p>
+
+                    </article>
+
+
+                    <article class="global-capability-card">
+
+                        <span class="capability-number">02</span>
+
+                        <div class="capability-icon">✦</div>
+
+                        <h3>Customs &amp; Documentation</h3>
+
+                        <p>
+                            Familiarity with customs procedures
+                            and the documentation involved
+                            in international trade.
+                        </p>
+
+                    </article>
+
+
+                    <article class="global-capability-card">
+
+                        <span class="capability-number">03</span>
+
+                        <div class="capability-icon">✦</div>
+
+                        <h3>Import &amp; Export Coordination</h3>
+
+                        <p>
+                            Coordination of trade enquiries
+                            and business requirements across
+                            international markets.
+                        </p>
+
+                    </article>
+
+
+                    <article class="global-capability-card">
+
+                        <span class="capability-number">04</span>
+
+                        <div class="capability-icon">✦</div>
+
+                        <h3>Business Partnerships</h3>
+
+                        <p>
+                            Professional relationships with
+                            customers, suppliers and business
+                            partners across markets.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             05. GLOBAL PARTNERSHIPS
+        ====================================== -->
+
+        <section class="global-partnerships">
+
+            <div class="global-partnerships-container">
+
+                <div class="global-partnerships-image">
+
+                    <img
+                        src="assets/images/global-partnerships.jpg"
+                        alt="International business partnership meeting"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="global-partnerships-content">
+
+                    <p class="global-eyebrow">
+                        BUILT ON RELATIONSHIPS
+                    </p>
+
+                    <h2>
+                        Partnerships That
+                        <span>Move Business Forward.</span>
+                    </h2>
+
+                    <p class="partnerships-lead">
+                        Strong international trade begins
+                        with dependable business relationships.
+                    </p>
+
+                    <p>
+                        We value clear communication,
+                        professional coordination and
+                        long-term relationships with buyers,
+                        suppliers and business partners.
+                    </p>
+
+                    <p>
+                        Our approach is centred on understanding
+                        commercial requirements and building
+                        opportunities through trusted
+                        connections.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="global-partnerships-button"
+                    >
+                        Connect With SRN
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             06. FINAL ENQUIRY
+        ====================================== -->
+
+        <section class="global-enquiry">
+
+            <div class="global-enquiry-overlay"></div>
+
+            <div class="global-enquiry-content">
+
+                <p class="global-eyebrow">
+                    EXPLORE INTERNATIONAL OPPORTUNITIES
+                </p>
+
+                <h2>
+                    Let's Connect
+                    <span>Across Borders.</span>
+                </h2>
+
+                <p>
+                    Whether you are a buyer, supplier or
+                    business partner, connect with SRN
+                    Logistics to discuss international
+                    trade opportunities.
+                </p>
+
+                <a
+                    href="contact.html"
+                    class="global-enquiry-button"
+                >
+                    Discuss Your Requirements
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <p>SRN LOGISTICS</p>
+                <span>IMPORT &amp; EXPORT</span>
+            </div>
+
+            <p class="footer-description">
+                Established in 1998 · Chennai, India
+            </p>
+
+            <p class="footer-copyright">
+                &copy;
+                <span id="copyrightYear">2026</span>
+                SRN Logistics. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const element = document.getElementById("srnWorldMap");
+        if (!element || typeof L === "undefined") return;
+
+        const map = L.map("srnWorldMap", {
+            center: [20, 48],
+            zoom: 2,
+            minZoom: 2,
+            maxZoom: 7,
+            scrollWheelZoom: false,
+            worldCopyJump: true
+        });
+
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+    maxZoom: 19
+}).addTo(map);
+
+        const gold = "#D7B45F";
+        const chennai = [13.0827, 80.2707];
+
+        const originIcon = L.divIcon({
+            className: "srn-origin-marker",
+            html: '<span class="srn-origin-pulse"></span><span class="srn-origin-core"></span>',
+            iconSize: [26, 26],
+            iconAnchor: [13, 13]
+        });
+
+        const marketIcon = L.divIcon({
+            className: "srn-market-marker",
+            html: '<span class="srn-market-pin"></span>',
+            iconSize: [18, 18],
+            iconAnchor: [9, 9]
+        });
+
+        L.marker(chennai, {icon: originIcon}).addTo(map)
+            .bindPopup('<div class="srn-map-popup"><strong>CHENNAI · INDIA</strong><span>SRN Logistics origin</span></div>');
+
+        L.marker(chennai, {
+            interactive: false,
+            icon: L.divIcon({
+                className: "srn-origin-label-wrap",
+                html: '<span class="srn-origin-label">CHENNAI · INDIA</span>',
+                iconSize: [112, 22],
+                iconAnchor: [-7, 11]
+            })
+        }).addTo(map);
+
+        const markets = [
+            ["United States", "North America", [38.9072, -77.0369], "market-north-america"],
+            ["Canada", "North America", [45.4215, -75.6972], "market-north-america"],
+            ["United Kingdom", "Europe", [51.5072, -0.1276], "market-europe"],
+            ["European markets", "Regional market", [50.1109, 8.6821], "market-europe"],
+            ["Dubai", "Middle East", [25.2048, 55.2708], "market-middle-east"],
+            ["Gulf countries", "Regional market", [25.0, 49.0], "market-middle-east"],
+            ["Malaysia", "Southeast Asia", [3.1390, 101.6869], "market-asia"],
+            ["Singapore", "Southeast Asia", [1.3521, 103.8198], "market-asia"],
+            ["Hong Kong", "East Asia", [22.3193, 114.1694], "market-asia"],
+            ["Bangkok", "Thailand", [13.7563, 100.5018], "market-asia"],
+            ["Philippines", "Southeast Asia", [14.5995, 120.9842], "market-asia"],
+            ["Jakarta", "Indonesia", [-6.2088, 106.8456], "market-asia"],
+            ["Australia", "Oceania", [-25.2744, 133.7751], "market-australia"],
+            ["African markets", "Regional market", [0, 20], "market-africa"]
+        ];
+
+        markets.forEach(function (item) {
+            const [name, region, coords, cardId] = item;
+            L.marker(coords, {icon: marketIcon}).addTo(map)
+                .bindTooltip(name, {direction: "top", className: "srn-map-tooltip"})
+                .bindPopup(
+                    '<div class="srn-map-popup"><strong>' + name +
+                    '</strong><span>' + region +
+                    '</span><a href="#' + cardId + '">View market details →</a></div>'
+                );
+
+            // Illustrative business-network connection, not a shipping route.
+            L.polyline([chennai, coords], {
+                color: gold,
+                weight: 1.5,
+                opacity: 0.65,
+                dashArray: "5 8",
+                interactive: false
+            }).addTo(map);
+        });
+
+        setTimeout(function () { map.invalidateSize(); }, 250);
+    });
+    </script>
+
+</body>
+</html>

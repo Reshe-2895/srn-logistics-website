@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SRN Logistics | Import &amp; Export</title>
+
+    <meta
+        name="description"
+        content="SRN Logistics, established in 1998 in Chennai, India. Specialists in the import and export of precious metals, jewellery, gemstones and selected general merchandise."
+    >
+
+    <meta name="theme-color" content="#080a0c">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+
+    <!-- Premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Homepage JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header">
+        <div class="nav-container">
+
+            <!-- Reserved space for the official company logo -->
+            <a class="brand" href="#home" aria-label="SRN Logistics home">
+                <span class="logo-placeholder">
+                    <!-- Add your official logo when available -->
+                   <!--  <img src="assets/logo/srn-logo.png" alt="SRN Logistics">-->
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">SRN</span>
+                    <span class="brand-description">LOGISTICS</span>
+                    <span class="brand-tagline">IMPORT &amp; EXPORT</span>
+                </span>
+            </a>
+
+            <!-- Mobile navigation button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Main navigation -->
+            <nav class="main-navigation" id="mainNavigation">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="about.html">About SRN</a>
+                <a class="nav-link" href="legacy.html">Our Legacy &amp; Leadership</a>
+                <a class="nav-link" href="products.html">Products &amp; Expertise</a>
+                <a class="nav-link" href="global.html">Global Trade</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </nav>
+
+            <a class="header-cta" href="#contact">
+                Enquire Now
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+    </header>
+
+<!-- MAIN HOMEPAGE -->
+<main>
+
+    <!-- ======================================
+         HERO SECTION AND BACKGROUND CAROUSEL
+    ======================================= -->
+    <section class="hero-section" id="home">
+
+        <!-- Background images rotate automatically every 4 seconds -->
+        <div class="hero-backgrounds" aria-hidden="true">
+
+            <!-- Slide 1: Precious metals -->
+            <div
+                class="hero-background hero-background-gold active"
+                data-slide="0"
+            ></div>
+
+            <!-- Slide 2: Jewellery -->
+            <div
+                class="hero-background hero-background-jewellery"
+                data-slide="1"
+            ></div>
+
+            <!-- Slide 3: Precious gemstones -->
+            <div
+                class="hero-background hero-background-gemstones"
+                data-slide="2"
+            ></div>
+
+            <!-- Slide 4: International cargo -->
+            <div
+                class="hero-background hero-background-cargo"
+                data-slide="3"
+            ></div>
+
+        </div>
+
+        <!-- Dark overlay for text readability -->
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <!-- Hero content -->
+        <div class="hero-container">
+            <div class="hero-content">
+
+                <p class="hero-eyebrow">
+                    ESTABLISHED 1998
+                    <span aria-hidden="true">·</span>
+                    CHENNAI, INDIA
+                </p>
+
+                <h1 class="hero-title">
+                    A Legacy of<br>
+                    Experience.<br>
+                    A Future of<br>
+                    <span>Opportunity.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Specialising in the import and export of precious
+                    metals, jewellery, gemstones and selected general
+                    merchandise.
+                </p>
+
+                <!-- Main action buttons -->
+                <div class="hero-actions">
+
+                    <a class="button button-primary" href="legacy.html">
+                        Know More About SRN Logistics
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a class="button button-outline" href="products.html">
+                        Explore Our Expertise
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Previous background -->
+        <button
+            class="carousel-arrow carousel-previous"
+            id="previousSlide"
+            type="button"
+            aria-label="Previous background image"
+        >
+            &#8249;
+        </button>
+
+        <!-- Next background -->
+        <button
+            class="carousel-arrow carousel-next"
+            id="nextSlide"
+            type="button"
+            aria-label="Next background image"
+        >
+            &#8250;
+        </button>
+
+        <!-- Carousel indicators -->
+        <div class="carousel-indicators" aria-label="Choose background">
+
+            <button
+                class="carousel-indicator active"
+                type="button"
+                data-slide-to="0"
+                aria-label="Show precious metals background"
+                aria-pressed="true"
+            ></button>
+
+            <button
+                class="carousel-indicator"
+                type="button"
+                data-slide-to="1"
+                aria-label="Show jewellery background"
+                aria-pressed="false"
+            ></button>
+
+            <button
+                class="carousel-indicator"
+                type="button"
+                data-slide-to="2"
+                aria-label="Show gemstones background"
+                aria-pressed="false"
+            ></button>
+
+            <button
+                class="carousel-indicator"
+                type="button"
+                data-slide-to="3"
+                aria-label="Show cargo background"
+                aria-pressed="false"
+            ></button>
+
+        </div>
+
+        <!-- Current slide number -->
+        <p class="carousel-counter" aria-live="polite">
+            <span id="currentSlide">01</span>
+            <span aria-hidden="true">/</span>
+            <span>04</span>
+        </p>
+
+        <!-- Product category strip -->
+        <div class="category-strip">
+
+            <a href="#expertise" class="category-link">
+                <span class="category-number">01</span>
+                <span>PRECIOUS METALS</span>
+            </a>
+
+            <a href="#expertise" class="category-link">
+                <span class="category-number">02</span>
+                <span>JEWELLERY</span>
+            </a>
+
+            <a href="#expertise" class="category-link">
+                <span class="category-number">03</span>
+                <span>PRECIOUS STONES</span>
+            </a>
+
+            <a href="#expertise" class="category-link">
+                <span class="category-number">04</span>
+                <span>GENERAL MERCHANDISE</span>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- END HERO SECTION -->
+
+
+    <!-- ======================================
+         MOVING PARTNER LOGOS
+    ======================================= -->
+    <section class="logo-marquee" aria-label="Trade partner logos">
+
+        <div class="logo-marquee-track">
+
+            <!-- First set of partner logos -->
+            <div class="logo-marquee-group">
+
+                <img src="assets/images/partner-01.png" alt="Trade partner 1">
+                <img src="assets/images/partner-02.png" alt="Trade partner 2">
+                <img src="assets/images/partner-03.png" alt="Trade partner 3">
+                <img src="assets/images/partner-04.png" alt="Trade partner 4">
+                <img src="assets/images/partner-05.png" alt="Trade partner 5">
+                <img src="assets/images/partner-06.png" alt="Trade partner 6">
+                <img src="assets/images/partner-07.png" alt="Trade partner 7">
+
+            </div>
+
+            <!-- Duplicate logos for seamless animation -->
+            <div class="logo-marquee-group" aria-hidden="true">
+
+                <img src="assets/images/partner-01.png" alt="">
+                <img src="assets/images/partner-02.png" alt="">
+                <img src="assets/images/partner-03.png" alt="">
+                <img src="assets/images/partner-04.png" alt="">
+                <img src="assets/images/partner-05.png" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- END MOVING PARTNER LOGOS -->
+
+
+    <!-- Continue with your existing homepage sections below -->
+
+</main>
+
+        <!-- EXPERTISE SECTION -->
+        <section class="expertise-section" id="expertise">
+
+            <div class="section-container">
+
+                <!-- Section introduction -->
+                <div class="expertise-heading">
+
+                    <div class="section-heading-content">
+                        <p class="section-eyebrow">OUR EXPERTISE</p>
+
+                        <h2>
+                            Specialised in<br>
+                            What Matters.
+                        </h2>
+                    </div>
+
+                    <p class="section-description">
+                        We specialise in the import and export of precious
+                        metals, jewellery, precious stones and selected
+                        general merchandise, supported by decades of
+                        industry experience and long-term business
+                        relationships.
+                    </p>
+
+                    <a class="section-link" href="#contact">
+    Explore Our Expertise
+    <span aria-hidden="true">→</span>
+</a>
+
+                </div>
+
+
+                <!-- PRODUCT CATEGORY CARDS -->
+                <div class="expertise-grid">
+
+                    <!-- 01: PRECIOUS METALS -->
+                    <a
+                        class="expertise-card"
+                        href="contact.html"
+                        aria-label="Enquire about precious metals"
+                    >
+                        <div
+                            class="expertise-image image-precious-metals"
+                            role="img"
+                            aria-label="Precious metal bullion"
+                        ></div>
+
+                        <div class="expertise-card-overlay"></div>
+
+                        <div class="expertise-card-content">
+
+                            <span class="expertise-card-number">
+                                01 / METALS
+                            </span>
+
+                            <h3>Precious Metals</h3>
+
+                            <p class="expertise-card-subtitle">
+                                Gold, Silver &amp; Platinum
+                            </p>
+
+                            <div class="expertise-card-detail">
+                                <p>
+                                    Precious metals including gold, silver
+                                    and platinum for international trade.
+                                    Discover our focus on careful trade
+                                    coordination and long-term commercial
+                                    relationships.
+                                </p>
+
+                                <span class="expertise-card-action">
+                                    Enquire about this category
+                                    <b aria-hidden="true">↗</b>
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+
+                    <!-- 02: JEWELLERY -->
+                    <a
+                        class="expertise-card"
+                        href="contact.html"
+                        aria-label="Enquire about jewellery"
+                    >
+                        <div
+                            class="expertise-image image-jewellery"
+                            role="img"
+                            aria-label="Fine jewellery"
+                        ></div>
+
+                        <div class="expertise-card-overlay"></div>
+
+                        <div class="expertise-card-content">
+
+                            <span class="expertise-card-number">
+                                02 / JEWELLERY
+                            </span>
+
+                            <h3>Jewellery</h3>
+
+                            <p class="expertise-card-subtitle">
+                                Gold, Silver &amp; Fine Designs
+                            </p>
+
+                            <div class="expertise-card-detail">
+                                <p>
+                                    Jewellery made with precious metals
+                                    and fine designs. Our import and export
+                                    focus centres on coordinating trade and
+                                    supporting trusted business relationships.
+                                </p>
+
+                                <span class="expertise-card-action">
+                                    Enquire about this category
+                                    <b aria-hidden="true">↗</b>
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+
+                    <!-- 03: PRECIOUS STONES -->
+                    <a
+                        class="expertise-card"
+                        href="contact.html"
+                        aria-label="Enquire about precious stones"
+                    >
+                        <div
+                            class="expertise-image image-gemstones"
+                            role="img"
+                            aria-label="Precious gemstones"
+                        ></div>
+
+                        <div class="expertise-card-overlay"></div>
+
+                        <div class="expertise-card-content">
+
+                            <span class="expertise-card-number">
+                                03 / GEMSTONES
+                            </span>
+
+                            <h3>Precious Stones</h3>
+
+                            <p class="expertise-card-subtitle">
+                                Diamonds, Rubies &amp; Emeralds
+                            </p>
+
+                            <div class="expertise-card-detail">
+                                <p>
+                                    Precious stones such as diamonds,
+                                    rubies and emeralds. These high-value
+                                    goods call for attentive trade
+                                    coordination and appropriate shipment
+                                    documentation.
+                                </p>
+
+                                <span class="expertise-card-action">
+                                    Enquire about this category
+                                    <b aria-hidden="true">↗</b>
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+
+                    <!-- 04: GENERAL MERCHANDISE -->
+                    <a
+                        class="expertise-card"
+                        href="contact.html"
+                        aria-label="Enquire about general merchandise"
+                    >
+                        <div
+                            class="expertise-image image-merchandise"
+                            role="img"
+                            aria-label="International cargo"
+                        ></div>
+
+                        <div class="expertise-card-overlay"></div>
+
+                        <div class="expertise-card-content">
+
+                            <span class="expertise-card-number">
+                                04 / TRADE
+                            </span>
+
+                            <h3>General Merchandise</h3>
+
+                            <p class="expertise-card-subtitle">
+                                Selected Trade Categories
+                            </p>
+
+                            <div class="expertise-card-detail">
+                                <p>
+                                    Selected general merchandise across
+                                    agreed trade categories, with an
+                                    emphasis on practical import and export
+                                    coordination, clear communication and
+                                    dependable trade relationships.
+                                </p>
+
+                                <span class="expertise-card-action">
+                                    Enquire about this category
+                                    <b aria-hidden="true">↗</b>
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUTURE PAGE SECTIONS -->
+        <section class="about-section" id="about">
+            <!-- About SRN content will be added later -->
+        </section>
+
+        <section class="legacy-section" id="legacy">
+            <!-- Our Legacy & Leadership content will be added later -->
+        </section>
+
+        <section class="global-trade-section" id="global-trade">
+            <!-- Global Trade content will be added later -->
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <p>SRN LOGISTICS</p>
+                <span>IMPORT &amp; EXPORT</span>
+            </div>
+
+            <p class="footer-description">
+                Established in 1998 · Chennai, India
+            </p>
+
+            <p class="footer-copyright">
+                &copy; <span id="copyrightYear">2026</span>
+                SRN Logistics. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
