@@ -75,7 +75,7 @@
     inset: 0;
 
     background-image:
-        url("../assets/images/contact-chennai.jpg");
+        url("assets/images/contact-chennai.webp");
 
     background-position: center;
     background-size: cover;
@@ -719,7 +719,7 @@
     overflow: hidden;
 
     background-image:
-        url("../assets/images/contact-chennai.jpg");
+        url("assets/images/contact-chennai.webp");
 
     background-position: center;
     background-size: cover;

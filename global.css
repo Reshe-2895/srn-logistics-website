@@ -54,7 +54,7 @@
     z-index: -3;
     inset: 0;
 
-    background-image: url("../assets/images/global-trade-hero.jpg");
+    background-image: url("assets/images/global-trade-hero.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -805,7 +805,7 @@
     overflow: hidden;
 
     background-image:
-        url("../assets/images/global-trade-enquiry.jpg");
+        url("assets/images/global-partnerships.webp");
 
     background-position: center;
     background-size: cover;

@@ -313,28 +313,28 @@ button {
 ========================================= */
 
 .hero-background-gold {
-    background-image: url("assets/images/01-precious-metals.jpg");
+    background-image: url("assets/images/01-precious-metals.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero-background-jewellery {
-    background-image: url("assets/images/02-jewellery.jpg");
+    background-image: url("assets/images/02-jewellery.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero-background-gemstones {
-    background-image: url("assets/images/03-precious-stones.jpg");
+    background-image: url("assets/images/03-precious-stones.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero-background-cargo {
-    background-image: url("assets/images/04-global-cargo.jpg");
+    background-image: url("assets/images/04-global-cargo.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

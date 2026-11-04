@@ -54,7 +54,7 @@
     inset: 0;
 
     background-image:
-        url("../assets/images/product/productgold.png");
+        url("assets/images/product/productgold.webp");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -289,22 +289,22 @@
 
 .image-metals {
     background-image:
-        url("../assets/images/product/product1.png");
+        url("assets/images/product/product1.webp");
 }
 
 .image-jewellery {
     background-image:
-        url("../assets/images/product/product2.png");
+        url("assets/images/product/product2.webp");
 }
 
 .image-gemstones {
     background-image:
-        url("../assets/images/product/product3.png");
+        url("assets/images/product/product3.webp");
 }
 
 .image-merchandise {
     background-image:
-        url("../assets/images/product/product4.png");
+        url("assets/images/product/product4.webp");
 }
 
 .product-category-overlay {
@@ -676,7 +676,7 @@
     overflow: hidden;
 
     background-image:
-        url("../assets/images/04-global-cargo.jpg");
+        url("assets/images/04-global-cargo.webp");
 
     background-position: center;
     background-size: cover;
